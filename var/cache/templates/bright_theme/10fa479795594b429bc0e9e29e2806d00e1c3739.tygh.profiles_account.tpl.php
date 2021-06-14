@@ -46,6 +46,12 @@ if (!$_smarty_tpl->tpl_vars['nothing_extra']->value) {?>
         <input type="text" id="email" name="user_data[email]" size="32" maxlength="128" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['user_data']->value['email'], ENT_QUOTES, 'UTF-8');?>
 " class="ty-input-text cm-focus" />
     </div>
+    <div class="ty-control-group">
+        <label for="email2" class="ty-control-group__title cm-required cm-email2 cm-trim"><?php echo $_smarty_tpl->__("email2");?>
+</label>
+        <input type="text" id="email2" name="user_data[email2]" size="32" maxlength="128" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['user_data']->value['email2'], ENT_QUOTES, 'UTF-8');?>
+" class="ty-input-text cm-focus" />
+    </div>
 
     <div class="ty-control-group">
         <label for="password1" class="ty-control-group__title cm-required cm-password"><?php echo $_smarty_tpl->__("password");?>
