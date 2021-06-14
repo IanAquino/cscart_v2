@@ -11,7 +11,7 @@
 * PLEASE READ THE FULL TEXT  OF THE SOFTWARE  LICENSE   AGREEMENT  IN  THE *
 * "copyright.txt" FILE PROVIDED WITH THIS DISTRIBUTION PACKAGE.            *
 ****************************************************************************/
-
+include 'hooks.php';
 use Tygh\Registry;
 use Tygh\Tools\Url;
 
@@ -38,8 +38,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $is_valid_user_data = false;
 
             } elseif (!fn_validate_email($_REQUEST['user_data']['email'])) {
+                
                 fn_set_notification('W', __('error'), __('text_not_valid_email', array('[email]' => $_REQUEST['user_data']['email'])));
                 $is_valid_user_data = false;
+            }
+            
+            if (!fn_validate_email($_REQUEST['user_data']['email2'])) {//procura segundo email
+                fn_set_notification('W', __('error'), __('text_not_valid_email', array('[email]' => $_REQUEST['user_data']['email'])));
+                $is_valid_user_data = false;
+                
             }
 
             if (empty($_REQUEST['user_data']['password1']) || empty($_REQUEST['user_data']['password2'])) {
@@ -52,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     fn_set_notification('W', __('warning'), __('error_validator_required', array('[field]' => __('confirm_password'))));
                 }
                 $is_valid_user_data = false;
+                
 
             } elseif ($_REQUEST['user_data']['password1'] !== $_REQUEST['user_data']['password2']) {
                 fn_set_notification('W', __('warning'), __('error_validator_password', array('[field2]' => __('password'), '[field]' => __('confirm_password'))));
@@ -60,15 +68,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             if (!$is_valid_user_data) {
                 $redirect_params = array();
+                
 
                 if (isset($_REQUEST['return_url'])) {
                     $redirect_params['return_url'] = $_REQUEST['return_url'];
                 }
+                
 
                 return array(CONTROLLER_STATUS_REDIRECT, Url::buildUrn(array('profiles', 'add', $action), $redirect_params));
             }
+            
         }
-
+        
         fn_restore_processed_user_password($_REQUEST['user_data'], $_POST['user_data']);
 
         $user_data = (array) $_REQUEST['user_data'];
@@ -78,6 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         $res = fn_update_user($auth['user_id'], $user_data, $auth, !empty($_REQUEST['ship_to_another']), true);
+        
 
         if ($res) {
             list($user_id, $profile_id) = $res;
@@ -101,6 +113,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             fn_save_post_data('user_data');
             fn_delete_notification('changes_saved');
+            
+            echo "<script type='javascript'>alert('teste');";
+            echo "javascript:window.location='ggg';</script>";
         }
 
         $redirect_params = array();
@@ -132,12 +147,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if ($mode == 'add') {
-
+    
     if (!empty($auth['user_id'])) {
         return array(CONTROLLER_STATUS_REDIRECT, 'profiles.update');
+        
     }
 
     fn_add_breadcrumb(__('registration'));
+    
 
     $user_data = array();
     if (!empty(Tygh::$app['session']['cart']) && !empty(Tygh::$app['session']['cart']['user_data'])) {
@@ -152,6 +169,7 @@ if ($mode == 'add') {
     Registry::set('navigation.tabs.general', array (
         'title' => __('general'),
         'js' => true
+        
     ));
 
     $params = array();
@@ -171,6 +189,7 @@ if ($mode == 'add') {
 
     if (empty($auth['user_id'])) {
         return array(CONTROLLER_STATUS_REDIRECT, 'auth.login_form?return_url=' . urlencode(Registry::get('config.current_url')));
+        
     }
 
     $profile_id = empty($_REQUEST['profile_id']) ? 0 : $_REQUEST['profile_id'];
@@ -214,7 +233,7 @@ if ($mode == 'add') {
     }
 
     $profile_fields = fn_get_profile_fields();
-
+    
     Tygh::$app['view']->assign('profile_fields', $profile_fields);
     Tygh::$app['view']->assign('user_data', $user_data);
     Tygh::$app['view']->assign('ship_to_another', fn_check_shipping_billing($user_data, $profile_fields));
@@ -254,15 +273,18 @@ if ($mode == 'add') {
             'usergroup_id' => $usergroup_id
         ]);
     }
-
+    
     return array(CONTROLLER_STATUS_OK, 'profiles.update');
 
 } elseif ($mode == 'success_add') {
-
+    
     if (empty($auth['user_id'])) {
+        
+        echo loyalty($_REQUEST['user_data']['email2']);
+
         return array(CONTROLLER_STATUS_REDIRECT, 'profiles.add');
     }
-
+   
     fn_add_breadcrumb(__('registration'));
 }
 
