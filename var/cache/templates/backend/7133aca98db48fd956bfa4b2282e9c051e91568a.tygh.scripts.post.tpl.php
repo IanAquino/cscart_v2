@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:25
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:09
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\addons\paypal\hooks\index\scripts.post.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:24848546660c0ee45393801-77867602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:148957707360c7f14968b955-53163180%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7133aca98db48fd956bfa4b2282e9c051e91568a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\addons\\paypal\\hooks\\index\\scripts.post.tpl',
-      1 => 1622708843,
+      1 => 1623709699,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '24848546660c0ee45393801-77867602',
+  'nocache_hash' => '148957707360c7f14968b955-53163180',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee4539a619_83686170',
+  'unifunc' => 'content_60c7f149692497_73575584',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee4539a619_83686170')) {function content_60c0ee4539a619_83686170($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
+<?php if ($_valid && !is_callable('content_60c7f149692497_73575584')) {function content_60c7f149692497_73575584($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
 if (!is_callable('smarty_function_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.script.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('name','description','addons.paypal.display_name','addons.paypal.display_description'));

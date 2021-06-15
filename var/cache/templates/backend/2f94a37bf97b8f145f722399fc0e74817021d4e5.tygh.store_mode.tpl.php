@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:24
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:08
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\views\settings\store_mode.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:87125885560c0ee447a7510-31511679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:56834036260c7f1486540e2-00040279%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '2f94a37bf97b8f145f722399fc0e74817021d4e5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\views\\settings\\store_mode.tpl',
-      1 => 1622708843,
+      1 => 1623709710,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '87125885560c0ee447a7510-31511679',
+  'nocache_hash' => '56834036260c7f1486540e2-00040279',
   'function' => 
   array (
   ),
@@ -30,9 +30,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee447d95e0_43724677',
+  'unifunc' => 'content_60c7f148782c84_45702971',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee447d95e0_43724677')) {function content_60c0ee447d95e0_43724677($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
+<?php if ($_valid && !is_callable('content_60c7f148782c84_45702971')) {function content_60c7f148782c84_45702971($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('store_mode','choose_your_store_mode','full','product_state_description.','license_number','please_enter_license_here','licensed_product','trial','trial_mode_ult_disabled','trial_mode_mve_disabled','text_store_mode_trial','select'));
 ?>

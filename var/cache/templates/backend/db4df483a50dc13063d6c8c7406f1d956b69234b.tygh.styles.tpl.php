@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:21
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:04
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\views\statuses\components\styles.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:145828984360c0ee41645218-43788538%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:47983023160c7f1442d61e2-42445653%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'db4df483a50dc13063d6c8c7406f1d956b69234b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\views\\statuses\\components\\styles.tpl',
-      1 => 1622708843,
+      1 => 1623709710,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '145828984360c0ee41645218-43788538',
+  'nocache_hash' => '47983023160c7f1442d61e2-42445653',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee41654c12_44474141',
+  'unifunc' => 'content_60c7f144411bf4_65450397',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee41654c12_44474141')) {function content_60c0ee41654c12_44474141($_smarty_tpl) {?><?php if (!is_callable('smarty_function_style')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.style.php';
+<?php if ($_valid && !is_callable('content_60c7f144411bf4_65450397')) {function content_60c7f144411bf4_65450397($_smarty_tpl) {?><?php if (!is_callable('smarty_function_style')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.style.php';
 ?><?php $_smarty_tpl->tpl_vars['statuses'] = new Smarty_variable(fn_get_statuses($_smarty_tpl->tpl_vars['type']->value), null, 0);?>
 <?php if ($_smarty_tpl->tpl_vars['statuses']->value) {?>
 <?php $_smarty_tpl->_capture_stack[0][] = array("styles", null, null); ob_start(); ?>
