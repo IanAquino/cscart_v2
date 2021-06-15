@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:25
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:09
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\addons\help_center\hooks\index\scripts.post.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:8897699960c0ee45247431-91090726%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:54001954460c7f149583360-69262792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'afd8ec17c28e378abb64447052ef20bfdfaeabf1' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\addons\\help_center\\hooks\\index\\scripts.post.tpl',
-      1 => 1622708843,
+      1 => 1623709699,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '8897699960c0ee45247431-91090726',
+  'nocache_hash' => '54001954460c7f149583360-69262792',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee4524fe87_11766715',
+  'unifunc' => 'content_60c7f14958b2d1_48852874',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee4524fe87_11766715')) {function content_60c0ee4524fe87_11766715($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
+<?php if ($_valid && !is_callable('content_60c7f14958b2d1_48852874')) {function content_60c7f14958b2d1_48852874($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
 if (!is_callable('smarty_function_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.script.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('all','help_center.see_all_n_results'));

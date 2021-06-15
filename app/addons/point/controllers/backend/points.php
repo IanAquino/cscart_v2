@@ -30,4 +30,15 @@ use Tygh\Registry;
        
     }
 
+ }elseif ($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+     if($mode == 'manage'){
+
+        $query1 = "insert into cscart_points(fk_user_id, data, total_pontos) values(".$_POST["user_id"].",NOW(), ".$_POST["total_pontos"].")";
+        db_query($query1);
+        return array(CONTROLLER_STATUS_REDIRECT, 'admin.php?dispatch=points.manage');
+
+     }
+
+     
  }

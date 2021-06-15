@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:24
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:08
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\common\scripts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:150476553060c0ee44c0d6c8-56421455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:168138618760c7f148cd9501-37975181%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fbaf8c37182a8598954c29327cf0d1626c7336cf' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\common\\scripts.tpl',
-      1 => 1622708843,
+      1 => 1623709701,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '150476553060c0ee44c0d6c8-56421455',
+  'nocache_hash' => '168138618760c7f148cd9501-37975181',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee44cb1196_28268860',
+  'unifunc' => 'content_60c7f148e1c674_59651553',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee44cb1196_28268860')) {function content_60c0ee44cb1196_28268860($_smarty_tpl) {?><?php if (!is_callable('smarty_block_scripts')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.scripts.php';
+<?php if ($_valid && !is_callable('content_60c7f148e1c674_59651553')) {function content_60c7f148e1c674_59651553($_smarty_tpl) {?><?php if (!is_callable('smarty_block_scripts')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.scripts.php';
 if (!is_callable('smarty_function_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\function.script.php';
 if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
 if (!is_callable('smarty_block_hook')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.hook.php';

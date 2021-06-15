@@ -37,10 +37,10 @@
  <queries>
     <item for="install">
         CREATE TABLE IF NOT EXISTS cscart_points (
-        id_points INT(11) NOT NULL,
+        id_points INT(11) NOT NULL AUTO_INCREMENT,
         fk_user_id MEDIUMINT(8) UNSIGNED NOT NULL,
         total_pontos INT(11) NOT NULL,
-        data DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        data DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id_points),
         INDEX fk_cscart_points_cscart_users_idx (fk_user_id ASC)
         )

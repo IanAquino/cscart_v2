@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:37:23
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:07
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\components\notifications_center\opener.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3552125860c0ee43edd615-54673951%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:180114244060c7f147b07ef6-85050531%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ea86368309cf9c2f78bd1bf53b37cddf82074caa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\components\\notifications_center\\opener.tpl',
-      1 => 1622708843,
+      1 => 1623709701,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '3552125860c0ee43edd615-54673951',
+  'nocache_hash' => '180114244060c7f147b07ef6-85050531',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ee43eebd70_33683682',
+  'unifunc' => 'content_60c7f147b82593_89034560',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ee43eebd70_33683682')) {function content_60c0ee43eebd70_33683682($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
+<?php if ($_valid && !is_callable('content_60c7f147b82593_89034560')) {function content_60c7f147b82593_89034560($_smarty_tpl) {?><?php if (!is_callable('smarty_block_inline_script')) include 'C:/xampp/htdocs/cscart/app/functions/smarty_plugins\\block.inline_script.php';
 ?><?php
 \Tygh\Languages\Helper::preloadLangVars(array('notifications_center.notifications','notifications_center.notifications','notifications_center.notifications','loading','loading','show_more','show_less','notifications_center.no_notifications','notifications_center.notifications'));
 ?>

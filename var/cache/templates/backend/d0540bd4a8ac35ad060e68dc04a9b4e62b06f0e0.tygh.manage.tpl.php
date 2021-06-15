@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2021-06-09 19:41:59
+<?php /* Smarty version Smarty-3.1.21, created on 2021-06-15 03:16:06
          compiled from "C:\xampp\htdocs\cscart\design\backend\templates\addons\point\views\points\manage.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:94527940560c0ef57cc14e6-74285568%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:49679240360c7f146839da2-73523767%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'd0540bd4a8ac35ad060e68dc04a9b4e62b06f0e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\cscart\\design\\backend\\templates\\addons\\point\\views\\points\\manage.tpl',
-      1 => 1623256905,
+      1 => 1623714160,
       2 => 'tygh',
     ),
   ),
-  'nocache_hash' => '94527940560c0ef57cc14e6-74285568',
+  'nocache_hash' => '49679240360c7f146839da2-73523767',
   'function' => 
   array (
   ),
@@ -22,14 +22,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
-  'unifunc' => 'content_60c0ef57cecd93_60205858',
+  'unifunc' => 'content_60c7f146891985_39772284',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_60c0ef57cecd93_60205858')) {function content_60c0ef57cecd93_60205858($_smarty_tpl) {?>
-<table class="table table-hover">
+<?php if ($_valid && !is_callable('content_60c7f146891985_39772284')) {function content_60c7f146891985_39772284($_smarty_tpl) {?>
+<table class="table table-hover p-5">
   <thead>
     <tr>
       <th scope="col">Name</th>
-      <th scope="col">Points</th>
+      <th scope="col">Total Points</th>
     </tr>
   </thead>
   <tbody>
@@ -51,6 +51,21 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
         <td>
             <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value['sum_total_pontos'], ENT_QUOTES, 'UTF-8');?>
 
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" onclick="$('#frm<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value['user_id'], ENT_QUOTES, 'UTF-8');?>
+points').toggle();">
+                    Insert Points
+            </button>
+
+             <form id="frm<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value['user_id'], ENT_QUOTES, 'UTF-8');?>
+points" method="POST" action="admin.php?dispatch=points.manage" class="hidden">
+                    <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['value']->value['user_id'], ENT_QUOTES, 'UTF-8');?>
+"/>
+                   
+                    <input type="number" name="total_pontos"/>
+                    <input type="submit" value="OK"/> 
+                </form>
         </td>
     </tr>
     <?php } ?>
